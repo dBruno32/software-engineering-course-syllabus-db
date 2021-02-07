@@ -1,0 +1,125 @@
+<!--
+ Author: Dominic Bruno
+ Class:  Software Engineering
+ Project: Lab 2 / Course Syllabus
+ Description: This is the first version of my Course Syllabus application and is being submitted as part of Lab 2.
+ File: index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Dominic Bruno
+    Class:  Software Engineering
+    Project: Lab 2 / Course Syllabus
+    Description: This is the first version of my Course Syllabus application and is being submitted as part of Lab 2.
+    File: index.html
+-->
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .course-description {
+            background-color: rgb(218, 216, 216);
+            margin-top: 5%;
+            margin-left: 25%;
+            margin-right: 25%;
+            text-align: center;
+            box-shadow: 1px 1px 1px #000;
+        }
+
+        .banner {
+            background-color: rgb(105, 105, 105);
+            text-align: right;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .links li {
+            display: inline;
+            padding-left: 1%;
+            padding-right: .5%;
+        }
+
+        .component {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 2%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            background-color: rgb(235, 228, 228);
+            box-shadow: 1px 1px 1px #000;
+        }
+
+        .component:hover {
+            background-color: rgb(250, 248, 227);
+        }
+
+        .component h3 {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .component p {
+            padding-bottom: 1%;
+        }
+
+        .component .indented-paragraph {
+            padding-left: 1%;
+            padding-bottom: 2%;
+        }
+    </style>
+
+    <head>
+        <meta charset="UTF=8">
+        <title>Course Syllabus</title>
+    </head>
+
+    <body>
+
+
+        <div class="banner">
+            <ul class="links">
+                <li>Syllabus</li>
+                <li>Regexp</li>
+            </ul>         
+        </div>
+
+        <div class="course-description">
+            <h3>Software Engineering - 44000</h3>
+            <p>Syllabus</p>
+            <p>Fall Semester 2020</p>
+        </div>
+
+        <div class="component" id="instructor-information">
+            <h3>I. Instructor Information</h3>
+            <p><b>Instructor’s name:</b> Eric Pogue</p>
+            <p><b>Lewis office location:</b> AS-132-A</p>
+            <p><b>Office hours:</b> MWF 1-2pm CT by appointment</p>
+            <p><b>Appointments:</b> Appointments can be requested via email</p>   
+            <p><b>Lewis Phone Number:</b> 563-209-7280 (mobile)</p>
+            <p><b>Lewis email address:</b> epogue@lewisu.edu</p>
+        </div>
+
+        <div class="component" id="course-information">
+            <h3>II. Course Information</h3>
+            <p><b>Course:</b> Software Engineering (CPSC-44000-LT1)</p>
+            <p><b>Course Credit Hours:</b> 3</p>
+            <h4><b>Course description: </b></h4>
+            <p class="indented-paragraph">Methods, strategies, and tools for implementing software systems, particularly as part
+            of a development team. Topics include the software development life cycle, Unified
+            Modeling Language, software testing techniques, software security, open-source
+            development, requirements gathering and documentation, maintenance, and basic
+            software project management.</p>
+            <p>Prerequisites: CPSC-24500 Object-Oriented Programming</p>
+            <p><b>Course meeting times:</b> MWF 12-12:50am CT from August 31 through December 12th</p>
+            <p><b>Meeting location:</b> AS 104A</p>
+            <p><b>Course final:</b> Monday, December 14th from 1:30 to 3:30pm CT</p>
+        </div>
+    </body>
+
+</html>
