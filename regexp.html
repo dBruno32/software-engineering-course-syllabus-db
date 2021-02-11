@@ -7,20 +7,11 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
     <style>
         * {
             margin: 0%;
             padding: 0%;
-        }
-
-        .course-description {
-            background-color: rgb(218, 216, 216);
-            margin-top: 5%;
-            margin-left: 25%;
-            margin-right: 25%;
-            text-align: center;
-            box-shadow: 1px 1px 1px #000;
         }
 
         .banner {
@@ -30,46 +21,103 @@
             padding-bottom: 1%;
         }
 
+        body {
+            background-color: rgb(243, 237, 188);
+        }
+
         .links li {
             display: inline;
             padding-left: 1%;
             padding-right: .5%;
+            color: #fff;
         }
 
+        .links a {
+            color: #fff;
+            list-style: none;
+            font-style: none;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: rgb(192, 183, 183);
+        }
+
+        .container {
+            margin-top: 5%;
+            margin-bottom: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 1%;
+            background-color: rgb(204, 197, 197);
+            box-shadow: 1px 1px 1px #000;
+            text-align: right;
+        }
+
+        .stage-text {
+            color: #fff;
+            display: inline-block;
+        }
+
+        #result-container .stage-text {
+            margin-right: 4%;
+        }
+
+        #result-container output {
+            text-align: center;
+            font-style: oblique;
+        }
+
+        .container button {
+            background-color: #000;
+            color: #fff;
+            padding: 2%;
+        }
+
+        .container button:hover {
+            cursor: pointer;
+        }
     </style>
 
     <head>
-        <meta charset="UTF=8">
+        <meta charset='UTF=8'>
         <title>regexp</title>
     </head>
 
     <body>
-        <div class="banner">
-            <ul class="links">
-                <li>Syllabus</li>
-                <li>Regexp</li>
+        <div class='banner'>
+            <ul class='links'>
+                <li><a href='./index.html'>Syllabus</a></li>
+                <li>-Regexp-<li>
             </ul>         
         </div>
 
-        <div class="container">
-            <input type="text" name="" id="regex">
+        <div class='container'>
+            <div class='stage-text'>String: </div> <input type='text' id='variable'> 
         </div>
 
-        <div class="container">
-            <input type="text" name="" id="variable">
+        <div class='container'>
+            <div class='stage-text'>Regex: </div> <input type='text' id='regex'>
         </div>
 
-        <div class="container">
-            <output class="boolean-output"></output>
+        <div class='container' id="result-container">
+            <div class='stage-text'>Result: </div> <output id='boolean-output'></output>
         </div>
 
-        <div class="container">
-            <input type="button" name="" id="">
+        <div class='container'>
+            <button type='button' onclick='checkRegexInString()'>Test String!</button>
         </div>
     </body>
 
     <script>
+        function checkRegexInString() {
+            var str = document.getElementById('variable').value;
+            var reg = document.getElementById('regex').value;
+            var regex = new RegExp(reg);
+            var op = document.getElementById('boolean-output');
 
+            op.innerHTML = regex.test(str);
+        }
     </script>
 
 </html>
