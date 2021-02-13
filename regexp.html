@@ -101,7 +101,7 @@
         </div>
 
         <div class='container' id="result-container">
-            <div class='stage-text'>Result: </div>  <input id="boolean-output" type="text" value="" size="5" disabled>
+            <div class='stage-text'>Result: </div>  <input id="boolean-output" type="text" disabled>
         </div>
 
         <div class='container'>
@@ -111,6 +111,7 @@
 
     <script>
         function checkRegexInString() {
+    
             var str = document.getElementById('variable').value;
             var reg = document.getElementById('regex').value;
             var regex = new RegExp(reg);
