@@ -92,7 +92,7 @@
         </div>
 
         <div class='container' id="result-container">
-            <div class='stage-text'>Result: </div>  <input id="boolean-output" type="text" disabled>
+            <div class='stage-text'>Result: </div>  <output id="boolean-output">boolean-expression</output>
         </div>
 
         <div class='container'>
@@ -107,7 +107,6 @@
             var reg = document.getElementById('regex').value;
             var regex = new RegExp(reg);
             var op = document.getElementById('boolean-output');
-
             op.value = regex.test(str);
         }
     </script>
